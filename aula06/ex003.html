@@ -21,8 +21,15 @@
     <p>Livrado da maldição...</p>
 
     <script>  
-    var n1 = window.prompt('Digite um número: ')
-    var n2 = window.prompt('Digite outro número: ')
+    var id1 = Number(window.prompt('Irei descobrir sua idade, digite o ano em que você está'))
+    var id2 = Number(window.prompt('Agora o ano em que você nasceu '))
+    var sub = id1 - id2
+     window.alert('Sua idade é ' +  sub) // Concatenou o resultado, escrevendo os dois números na tela ao invés de somar.
+     // Number + number para soma
+     // String + String para concatenação
+     /*
+     A solução foi converter uma string em um number usando o atributo number.parseInt para numeros inteiros.
+     */
     </script>
 </body>
 </html>
