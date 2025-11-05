@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de países</title>
+</head>
+<body>
+    <main>
+        <h1>Verificador de países</h1>
+        <input type="text" name="ipais" id="ipais">
+        <input type="button" value="Verificar" onclick="pais()">
+
+        <div id="resultado"></div>
+    </main>
+
+    <script>    
+        function pais() {
+           var ipais = document.getElementById('ipais')
+            var resultado = document.getElementById ('resultado')
+            var pais = (ipais.value)
+
+            if(pais === 'Brasil') {
+                resultado.innerHTML = 'Você é brasileiro'
+            } else {
+                resultado.innerHTML = 'Você é estrangeiro'
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
