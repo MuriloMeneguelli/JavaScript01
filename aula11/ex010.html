@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+
+        main {
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+
+            background-color: blue;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.658) 1px 1px 5px 1px;
+            height: 300px;
+            text-align: center;
+
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sistema de Multas</h1>
+       <p>Velocidade do carro: <input type="number" name="ivel" id="ivel"> Km/h</p>
+       <input type="button" value="Verificar" onclick="calcular()">
+
+       <div id="resultado"></div>
+    </main>
+
+    
+    <script>
+    
+
+    function calcular() {
+        var ivel = window.document.getElementById('ivel')
+        var resultado = window.document.getElementById('resultado')
+        var vel = Number(ivel.value)
+
+        resultado.innerHTML = `Sua velocidade atual é de ${vel}Km/h` 
+        if (vel > 60){
+            resultado.innerHTML = `Sua velocidade foi de ${vel}Km/h você foi MULTADO!`
+        } else {
+            resultado.innerHTML= `<p> Boa viagem e dirija sempre com cinto de segurança!</p>`
+        }
+       
+    }
+    </script>
+</body>
+</html>
