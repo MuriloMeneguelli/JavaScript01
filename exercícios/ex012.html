@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="carregar()">
+    <script>
+       
+
+        function carregar() {
+            var agora = new Date()
+            var hora = agora.getHours()
+            if (hora >= 9 && hora <= 21){
+                alert(`Agora são ${hora} horas e você precisa trabalhar.`)
+            } else {
+                alert(`Agora são ${hora} horas e seu expediente acabou, bom descanso!`)
+            }
+        }
+    </script>
+</body>
+</html>
