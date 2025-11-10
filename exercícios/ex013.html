@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idade = Number(window.prompt('Digite sua idade'))
+        var temCarta = confirm('Você tem carteira de motorista?')
+        var estaSob = confirm('Você está sobrio?')
+
+        if (idade >= 18 && temCarta && estaSob) {
+            alert('Dirija sempre usando cinto de segurança e boa viagem!')
+        } else {
+            alert('Terá que ir a pé.')
+        }
+    </script>
+</body>
+</html>
