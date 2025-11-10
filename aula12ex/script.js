@@ -3,10 +3,9 @@ function carregar() {
   var img = document.getElementById('imagem');
 
   // Pega a hora atual do sistema
-  /*var data = new Date();
+  var data = new Date();
   var hora = data.getHours();
-*/
-var hora = 14
+
   msg.innerHTML = `Agora são ${hora} horas.`;
 
   // Define qual imagem será mostrada
