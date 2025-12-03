@@ -10,6 +10,12 @@ function contar(){
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
+    }  
+        if(p <= 0) {
+            window.alert('Passo invalido [ERROR]')
+            p = 1
+        }
+        
         //CONTAGEM CRESCENTE
         if (i < f) {
             for (let c = i; c <= f; c += p){
@@ -21,6 +27,4 @@ function contar(){
                 res.innerHTML += ` ${c} \u{1F921}`
             }
         }
-        
-    }
 }
